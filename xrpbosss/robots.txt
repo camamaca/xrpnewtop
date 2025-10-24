@@ -1,0 +1,509 @@
+# Enhanced Security robots.txt
+# Purpose: Maximum protection against all forms of scanning, analysis, and crawling
+# Last updated: 2024
+# Implementation: Place this file at website-root/robots.txt
+
+# =========================================
+# 1. Global Blocking Rules
+# =========================================
+User-agent: *
+Disallow: /
+Crawl-delay: 30
+Visit-time: 0800-2000
+
+# =========================================
+# 2. Major Search Engine Bots
+# =========================================
+User-agent: Googlebot
+Disallow: /
+User-agent: Googlebot-Image
+Disallow: /
+User-agent: Googlebot-Mobile
+Disallow: /
+User-agent: Googlebot-News
+Disallow: /
+User-agent: Bingbot
+Disallow: /
+User-agent: YandexBot
+Disallow: /
+User-agent: Baiduspider
+Disallow: /
+User-agent: DuckDuckBot
+Disallow: /
+User-agent: Slurp
+Disallow: /
+User-agent: Sogou
+Disallow: /
+User-agent: Exabot
+Disallow: /
+
+# =========================================
+# 3. Reputation & Security Scanning Services
+# =========================================
+# ScamAdviser and Related
+User-agent: ScamAdviser
+Disallow: /
+User-agent: Scam-Adviser
+Disallow: /
+User-agent: ScamAdvisor
+Disallow: /
+User-agent: Scam-Advisor
+Disallow: /
+User-agent: ScamDoc
+Disallow: /
+User-agent: Scamalytics
+Disallow: /
+User-agent: ScamAnalyzer
+Disallow: /
+User-agent: ScamnerBot
+Disallow: /
+User-agent: ScamReporter
+Disallow: /
+
+# Trust & Review Services
+User-agent: Transparencybot
+Disallow: /
+User-agent: SecurityScanner
+Disallow: /
+User-agent: TrustPilot
+Disallow: /
+User-agent: TrustpilotBot
+Disallow: /
+User-agent: SiteJabber
+Disallow: /
+User-agent: WebsiteRating
+Disallow: /
+User-agent: SafetyDetective
+Disallow: /
+User-agent: ReviewsBot
+Disallow: /
+User-agent: RatingBot
+Disallow: /
+User-agent: ReputationBot
+Disallow: /
+
+# Security Services
+User-agent: VirusTotal
+Disallow: /
+User-agent: URLVoid
+Disallow: /
+User-agent: PhishTank
+Disallow: /
+User-agent: ThreatIntelligenceBot
+Disallow: /
+User-agent: Qualys
+Disallow: /
+User-agent: Nessus
+Disallow: /
+User-agent: Acunetix
+Disallow: /
+User-agent: Detectify
+Disallow: /
+User-agent: ImmuniWeb
+Disallow: /
+User-agent: Intruder
+Disallow: /
+User-agent: NeuraLegion
+Disallow: /
+User-agent: Probely
+Disallow: /
+User-agent: SecurityMetrics
+Disallow: /
+User-agent: HackerOne
+Disallow: /
+User-agent: BugCrowd
+Disallow: /
+User-agent: Synack
+Disallow: /
+
+# Domain & SSL Analysis
+User-agent: WhoisXMLAPI
+Disallow: /
+User-agent: DomainTools
+Disallow: /
+User-agent: Whois
+Disallow: /
+User-agent: WhoIsBot
+Disallow: /
+User-agent: domainICARUS
+Disallow: /
+User-agent: SSLBot
+Disallow: /
+User-agent: SSLAnalyzer
+Disallow: /
+User-agent: CertificateBot
+Disallow: /
+
+# Network & Infrastructure Analysis
+User-agent: Shodan
+Disallow: /
+User-agent: Censys
+Disallow: /
+User-agent: BinaryEdge
+Disallow: /
+User-agent: LeakIX
+Disallow: /
+User-agent: ZoomEye
+Disallow: /
+User-agent: Fofa
+Disallow: /
+User-agent: DNS-Tools
+Disallow: /
+User-agent: SecurityTrails
+Disallow: /
+User-agent: SpyOnWeb
+Disallow: /
+User-agent: InternetVista
+Disallow: /
+User-agent: UptimeRobot
+Disallow: /
+User-agent: StatusCake
+Disallow: /
+User-agent: Pingdom
+Disallow: /
+User-agent: WebSitePulse
+Disallow: /
+
+# Business Intelligence
+User-agent: SimilarWeb
+Disallow: /
+User-agent: Owler
+Disallow: /
+User-agent: Crunchbase
+Disallow: /
+User-agent: ZoomInfo
+Disallow: /
+User-agent: Hunter
+Disallow: /
+User-agent: Clearbit
+Disallow: /
+User-agent: FullContact
+Disallow: /
+User-agent: RocketReach
+Disallow: /
+User-agent: Lusha
+Disallow: /
+User-agent: Apollo
+Disallow: /
+User-agent: LeadIQ
+Disallow: /
+User-agent: DataNyze
+Disallow: /
+User-agent: SignalHire
+Disallow: /
+
+# Fraud Detection Services
+User-agent: AbuseIPDB
+Disallow: /
+User-agent: IPQualityScore
+Disallow: /
+User-agent: MaxMind
+Disallow: /
+User-agent: Sift
+Disallow: /
+User-agent: MinFraud
+Disallow: /
+User-agent: FraudLabsPro
+Disallow: /
+
+# Financial Analysis
+User-agent: Bloomberg
+Disallow: /
+User-agent: Reuters
+Disallow: /
+User-agent: FactSet
+Disallow: /
+User-agent: MorningStar
+Disallow: /
+User-agent: CapitalIQ
+Disallow: /
+User-agent: AlphaSense
+Disallow: /
+User-agent: Refinitiv
+Disallow: /
+
+# =========================================
+# 4. Known Fraud & Malicious Bots
+# =========================================
+User-agent: PetalBot
+Disallow: /
+User-agent: NetSystemsResearch
+Disallow: /
+User-agent: DataForSeoBot
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+User-agent: SentiBot
+Disallow: /
+User-agent: SeekportBot
+Disallow: /
+User-agent: SimplePie
+Disallow: /
+User-agent: PHP-Curl-Class
+Disallow: /
+User-agent: Python-urllib
+Disallow: /
+User-agent: Python-requests
+Disallow: /
+User-agent: Go-http-client
+Disallow: /
+User-agent: node-fetch
+Disallow: /
+User-agent: HeadlessChrome
+Disallow: /
+User-agent: Puppeteer
+Disallow: /
+User-agent: Selenium
+Disallow: /
+User-agent: PhantomJS
+Disallow: /
+User-agent: CazoodleBot
+Disallow: /
+User-agent: evc-batch
+Disallow: /
+User-agent: PiplBot
+Disallow: /
+User-agent: Pixray-Seeker
+Disallow: /
+User-agent: 360Spider
+Disallow: /
+User-agent: AboutUsBot
+Disallow: /
+User-agent: HTTrack
+Disallow: /
+User-agent: DataCrawler
+Disallow: /
+
+# =========================================
+# 5. Social Media & Preview Bots
+# =========================================
+User-agent: facebookexternalhit
+Disallow: /
+User-agent: Twitterbot
+Disallow: /
+User-agent: WhatsApp
+Disallow: /
+User-agent: LinkedInBot
+Disallow: /
+User-agent: TelegramBot
+Disallow: /
+User-agent: Discordbot
+Disallow: /
+User-agent: SlackBot
+Disallow: /
+User-agent: TelegramBot
+Disallow: /
+
+# =========================================
+# 6. AI & ML Training Bots
+# =========================================
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: omgilibot
+Disallow: /
+
+# =========================================
+# 7. Protected Directories & Files
+# =========================================
+User-agent: *
+# Financial & Account Areas
+Disallow: /account/
+Disallow: /wallet/
+Disallow: /transactions/
+Disallow: /secure/
+Disallow: /payment/
+Disallow: /billing/
+Disallow: /invoice/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /order*/
+Disallow: /withdraw*
+Disallow: /deposit*
+Disallow: /transfer*
+Disallow: /send*
+Disallow: /receive*
+Disallow: /exchange*
+Disallow: /trade*
+Disallow: /swap*
+Disallow: /bridge*
+Disallow: /connect*
+
+# Security-Sensitive Areas
+Disallow: /verification/
+Disallow: /2fa/
+Disallow: /mfa/
+Disallow: /kyc/
+Disallow: /recovery/
+Disallow: /reset/
+Disallow: /auth*/
+Disallow: /oauth*/
+Disallow: /sso*/
+Disallow: /validate*/
+Disallow: /confirm*/
+
+# Company Information
+Disallow: /about/
+Disallow: /contact/
+Disallow: /support/
+Disallow: /help/
+Disallow: /faq/
+Disallow: /terms/
+Disallow: /privacy/
+Disallow: /legal/
+Disallow: /disclaimer/
+Disallow: /company/
+Disallow: /business/
+Disallow: /corporate/
+Disallow: /team/
+Disallow: /staff/
+Disallow: /employees/
+Disallow: /partners/
+Disallow: /affiliates/
+Disallow: /vendors/
+
+# Technical Infrastructure
+Disallow: /analytics/
+Disallow: /statistics/
+Disallow: /metrics/
+Disallow: /performance/
+Disallow: /monitor/
+Disallow: /status/
+Disallow: /health/
+Disallow: /uptime/
+Disallow: /availability/
+Disallow: /infrastructure/
+Disallow: /technology/
+Disallow: /stack/
+Disallow: /hosting/
+Disallow: /server/
+Disallow: /network/
+Disallow: /datacenter/
+Disallow: /cloud/
+
+# File Types
+Disallow: /*.json$
+Disallow: /*.csv$
+Disallow: /*.xml$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.txt$
+Disallow: /*.md$
+Disallow: /*.env
+Disallow: /*config*
+Disallow: /*.yaml$
+Disallow: /*.yml$
+Disallow: /*.ini$
+Disallow: /*.conf$
+Disallow: /*.cfg$
+Disallow: /*.properties$
+Disallow: /*.settings$
+Disallow: /*.wsdl$
+Disallow: /*.wadl$
+Disallow: /*.dtd$
+Disallow: /*.xsd$
+Disallow: /*.map$
+Disallow: /*.dist$
+Disallow: /*.development$
+Disallow: /*.production$
+Disallow: /*.staging$
+Disallow: /*.test$
+Disallow: /*.debug$
+Disallow: /*.backup$
+Disallow: /*.bak$
+Disallow: /*.old$
+Disallow: /*.tmp$
+Disallow: /*.temp$
+Disallow: /*.swp$
+Disallow: /*~$
+
+# =========================================
+# 8. Dynamic Content Protection
+# =========================================
+# Query Parameters
+Disallow: /*?*
+Disallow: /*&*
+Disallow: /*/search
+Disallow: /*/filter
+Disallow: /*/sort
+Disallow: /*/page
+Disallow: /search/
+Disallow: /temp/
+Disallow: /cache/
+
+# Sensitive Parameters
+Disallow: /*redirect*
+Disallow: /*return*
+Disallow: /*callback*
+Disallow: /*hook*
+Disallow: /*verify*
+Disallow: /*confirm*
+Disallow: /*token*
+Disallow: /*key*
+Disallow: /*hash*
+Disallow: /*signature*
+Disallow: /*review*
+Disallow: /*rating*
+Disallow: /*feedback*
+Disallow: /*report*
+Disallow: /*scam*
+Disallow: /*legitimate*
+Disallow: /*trust*
+Disallow: /*security*
+Disallow: /*safe*
+Disallow: /*check*
+Disallow: /*status*
+
+# =========================================
+# 9. Infrastructure Analysis Protection
+# =========================================
+User-agent: *
+Disallow: /*cdn*
+Disallow: /*proxy*
+Disallow: /*gateway*
+Disallow: /*balancer*
+Disallow: /*cluster*
+Disallow: /*node*
+Disallow: /*instance*
+Disallow: /*server*
+Disallow: /*host*
+Disallow: /*machine*
+Disallow: /*container*
+Disallow: /*pod*
+Disallow: /*service*
+Disallow: /*worker*
+Disallow: /*task*
+Disallow: /*job*
+Disallow: /*process*
+Disallow: /*thread*
+Disallow: /*queue*
+Disallow: /*cache*
+Disallow: /*buffer*
+Disallow: /*stream*
+Disallow: /*flow*
+Disallow: /*traffic*
+Disallow: /*bandwidth*
+Disallow: /*latency*
+Disallow: /*performance*
+Disallow: /*monitoring*
+Disallow: /*logging*
+Disallow: /*tracking*
+Disallow: /*tracing*
+Disallow: /*profiling*
+Disallow: /*debugging*
+Disallow: /*testing*
+Disallow: /*staging*
+Disallow: /*development*
+Disallow: /*production*
+

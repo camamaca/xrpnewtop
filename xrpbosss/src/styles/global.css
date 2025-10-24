@@ -1,0 +1,995 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets//Inter.ttf);
+}
+
+* {
+    /* background: rgba(64, 0, 255, 0.064); */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background: #ffdee723;
+}
+
+section,
+nav,
+footer {
+    padding: 0px 100px;
+}
+
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+img {
+    height: 100%;
+}
+
+button {
+    padding: 15px 28px;
+    border-radius: 100px;
+    border: none;
+    background: #E62056;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonAlt {
+    background: black;
+    color: white;
+}
+
+.wireAlt {
+    display: flex;
+    gap: 10px;
+    color: black;
+    border: 1px solid #E62056;
+    background: none;
+
+    .wiIcon {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.full {
+    width: 100%;
+}
+
+
+/* content */
+.logo {
+    height: 40px;
+    width: 140px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .navAct {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.hero {
+    padding: 15vh 0 0;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+
+    .heroBlur {
+        top: -10vh;
+        position: absolute;
+        /* background: black; */
+        height: 60vh;
+        width: 100%;
+        z-index: -1;
+
+        img {
+            height: 60vw;
+        }
+    }
+
+
+    .heroInfo {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            width: 800px;
+        }
+
+        p {
+            margin: 20px 0 30px;
+            width: 500px;
+        }
+    }
+
+    .sectionAction {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #E62058, #A720E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.workingWitUs {
+    text-align: center;
+
+    .secBoxes {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+
+        .bBox {
+            flex: 1;
+            flex-wrap: wrap;
+            height: 60px;
+            background: red;
+            /* width: 150px; */
+
+        }
+    }
+}
+
+
+.info {
+    margin-top: -15vh;
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vh;
+        gap: 60px;
+
+        .cBox {
+            width: 250px;
+
+            .cIcon {
+                height: 80px;
+                width: 80px;
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+
+.subHero {
+    margin: 20px 0 100px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .voms {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background: url("../assets/dv-1.png"); */
+        background-size: cover;
+        z-index: -1;
+    }
+
+
+    .subHeroWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h2 {
+            width: 800px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 5rem;
+        }
+
+        button {
+            margin-top: 30px;
+            width: fit-content
+        }
+    }
+}
+
+.services {
+    margin-top: 30px;
+
+    .secTopServ {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        h2 {
+            width: 500px;
+        }
+    }
+
+    .secCardsServ {
+        margin: 0 50px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .serCard {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 60px 50px;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background: black;
+            color: white;
+
+            .iconSer {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+
+.bofooter {
+    background: black;
+}
+
+footer {
+    margin-top: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: white;
+    background: transparent;
+    position: relative;
+
+
+    .bvon {
+        position: absolute;
+        height: 100%;
+        width: 60%;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .footext {
+        font-size: 5rem;
+        width: 500px;
+    }
+
+    .fooLogo {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .fLogo {
+            height: 30px;
+            width: 100px;
+        }
+    }
+
+    hr {
+        margin: 20px 0 20px;
+        border: .1px solid rgba(255, 255, 255, 0.247);
+        /* background: black; */
+    }
+
+    .fooLogob {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .socials {
+            display: flex;
+            gap: 10px;
+
+            .socBox {
+                height: 20px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+        }
+    }
+}
+
+
+
+
+.actionSce {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+
+
+
+    .linkBox {
+        padding: 30px;
+        height: 420px;
+        width: 350px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.084);
+        margin-bottom: 10vh;
+
+
+        .iconLink {
+            margin: auto;
+            height: 80px;
+            width: 80px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .textLinks {
+            text-align: center;
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .linklistBox {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 180px;
+            overflow-y: scroll;
+            padding-bottom: 30px;
+
+            .linkSingle {
+                padding: 15px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                background: #1515150d;
+
+                .cctIcon {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .linklistBox::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .shacj {
+        height: fit-content;
+    }
+
+    .vom{
+        text-align: center;
+        margin-bottom: 20px;
+        p{
+            text-align: center;
+        }
+    }
+    .actionlink{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.eBox {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    .red{
+        color: red;
+        font-size: .8rem;
+    }
+    .cbon{
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .eIcon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .sec {
+        font-size: .9rem;
+        opacity: .8;
+    }
+}
+
+
+.textArea {
+    margin-bottom: 30px;
+
+    textarea {
+        box-sizing: border-box;
+        height: 120px;
+        width: 100%;
+        border-radius: 1px solid rgba(0, 0, 0, 0.084);
+        border-radius: 10px;
+        padding: 10px;
+        outline: none;
+        font-weight: 500;
+        font-size: .9rem;
+        letter-spacing: .5px;
+        margin-bottom: 10px;
+    }
+
+    .err {
+        font-size: .9rem;
+        opacity: .8;
+        text-align: center;
+        color: red;
+    }
+}
+
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 100px;
+
+    .exText {
+        width: 400px;
+
+        p {
+            padding-top: 20px;
+        }
+    }
+
+    .x {
+        display: flex;
+        gap: 40px;
+
+        h1 {
+            color: #E62056;
+        }
+
+        .ttop,
+        .arg {
+            font-size: 1.4rem;
+        }
+
+        .arg {
+            font-size: 1.2rem;
+            opacity: .6;
+        }
+    }
+}
+
+.claim {
+    margin: 50px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    .claimText {
+        width: 600px;
+        padding-top: 30px;
+
+        p {
+            padding-top: 20px;
+            /* width: 400px; */
+
+        }
+    }
+
+    .clamBox {
+        width: 400px;
+        border-radius: 20px;
+        border: 1px solid #E62058;
+
+        .ctiop {
+            padding: 30px 40px;
+
+            .cons {
+                font-size: 1.8rem;
+                padding-bottom: 30px;
+            }
+
+            .biCl {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-weight: 800;
+                }
+
+                .kf,
+                .ttCLI {
+                    font-size: 1.2rem;
+                    opacity: .7;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .actionCli {
+            border-top: 1px solid #E62056;
+            padding: 30px 40px;
+
+            button {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .claim {
+        margin: 50px 0 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+
+        .claimText {
+            width: fit-content;
+            padding-top: 30px;
+
+            p {
+                padding-top: 20px;
+            }
+        }
+
+        .clamBox {
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid #E62058;
+
+            .ctiop {
+                padding: 30px 40px;
+
+                .cons {
+                    font-size: 1.8rem;
+                    padding-bottom: 30px;
+                }
+
+                .biCl {
+                    margin-bottom: 30px;
+
+                    h2 {
+                        font-weight: 800;
+                        font-size: 3rem;
+                    }
+
+                    .kf,
+                    .ttCLI {
+                        font-size: 1.2rem;
+                        opacity: .7;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .actionCli {
+                border-top: 1px solid #E62056;
+                padding: 30px 40px;
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .extra {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 80px 0 100px;
+
+        .exText {
+            width: 100%;
+    
+            p {
+                padding-top: 20px;
+            }
+        }
+
+        .x {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+    }
+
+    nav {
+        .navAct {
+            button:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    .actionSce {
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        position: relative;
+
+
+
+        .linkBox {
+            padding: 30px;
+            height: 420px;
+            width: 320px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.084);
+            margin-bottom: 10vh;
+            overflow: hidden;
+
+
+            .iconLink {
+                margin: auto;
+                height: 80px;
+                width: 80px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .textLinks {
+                text-align: center;
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .linklistBox {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                /* height: 210px */
+                overflow-y: scroll;
+                padding-bottom: 50px;
+
+                .linkSingle {
+                    padding: 15px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .cctIcon {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .linklistBox::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .shacj {
+            height: fit-content;
+        }
+    }
+
+    * {
+        /* background: rgba(54, 255, 23, 0.154); */
+    }
+
+    section,
+    nav,
+    footer {
+        padding: 0px 30px;
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    button {
+        padding: 15px 20px;
+        border-radius: 100px;
+        border: none;
+        background: #E62056;
+        color: white;
+        cursor: pointer;
+    }
+
+    .logo {
+        height: 28px;
+        width: fit-content;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .hero {
+        padding: 15vh 30px 0;
+        text-align: center;
+        /* height: 70vh; */
+
+
+        .heroInfo {
+
+            h1 {
+                width: fit-content;
+                font-size: 3.5rem;
+            }
+
+            p {
+                width: fit-content;
+            }
+        }
+
+        .sectionAction {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+    }
+
+    .info {
+        margin-top: -15vh;
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 10vh;
+            gap: 60px;
+
+            .cBox {
+                width: fit-content;
+            }
+
+        }
+
+    }
+
+    /*  */
+    .workingWitUs {
+        text-align: center;
+
+        .secBoxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+
+
+
+            .bBox {
+                height: 60px;
+                /* width: 100px */
+                flex: 1;
+                background: red;
+            }
+        }
+    }
+
+    .subHero {
+
+        .subHeroWrap {
+
+            h2 {
+                width: fit-content;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+
+        }
+    }
+
+    .services {
+        margin-top: 30px;
+
+        .secTopServ {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            h2 {
+                width: 500px;
+            }
+        }
+
+        .secCardsServ {
+            margin: 0 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 50px;
+
+            .serCard {
+                display: flex;
+                flex-direction: column;
+                padding: 60px 30px;
+                align-items: center;
+                gap: 20px;
+                text-align: center;
+                border-radius: 10px;
+                background: black;
+                color: white;
+
+                .iconSer {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+
+
+
+
+    }
+
+    footer {
+        margin-top: 20vh;
+        padding-top: 8vh;
+        padding-bottom: 4vh;
+        background: black;
+        color: white;
+
+        .footext {
+            font-size: 2rem;
+            width: fit-content;
+        }
+
+        .fooLogo {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .fLogo {
+                height: 30px;
+                width: 100px;
+            }
+        }
+
+        hr {
+            margin: 20px 0 20px;
+            border: .1px solid rgba(255, 255, 255, 0.247);
+            /* background: black; */
+        }
+
+        .fooLogob {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
+            align-items: baseline;
+
+            .socials {
+                display: flex;
+                gap: 10px;
+
+                .socBox {
+                    height: 20px;
+                    width: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info {
+        margin-top: -15vh;
+    }
+}
